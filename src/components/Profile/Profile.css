@@ -1,0 +1,132 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 410px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 74px 0 0;
+}
+
+.profile__title {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  padding: 0 0 116px;
+}
+
+.profile__form {
+  display: flex;
+  flex-direction: column;
+  width: 410px;
+  margin: 0;
+  padding: 0;
+}
+
+.profile__label {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 7px 0 16px;
+  margin: 0;
+  border-bottom: 1px solid #424242;
+}
+
+.profile__label:last-of-type {
+  border-bottom: none;
+}
+
+.profile__input {
+  width: 350px;
+  background: #202020;
+  color: #fff;
+  text-align: right;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.profile__input:focus {
+  outline: none;
+  border-bottom: 1px solid #3ddc84;
+}
+
+.profile__error {
+  min-height: 10px;
+  margin: 0;
+  padding: 0;
+  color: #ee3465;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile__btn-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #202020;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  margin: 193px auto 16px;
+  border: 0;
+  cursor: pointer;
+}
+
+.profile__btn-edit:hover {
+  opacity: 0.800000011920929;
+}
+
+.profile__btn-exit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #202020;
+  padding: 0;
+  margin: 0 auto;
+  border: 0;
+  cursor: pointer;
+}
+
+.profile__btn-exit:hover {
+  opacity: 0.800000011920929;
+}
+
+.profile__text-link {
+  color: #ee3465;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+}

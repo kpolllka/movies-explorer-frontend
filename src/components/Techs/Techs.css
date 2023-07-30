@@ -1,0 +1,136 @@
+.tech {
+  max-width: 1280px;
+  background: #272727;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .tech {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tech {
+    max-width: 320px;
+  }
+}
+
+.tech__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  min-height: 625px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .tech__container {
+    max-width: 668px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tech__container {
+    max-width: 284px;
+  }
+}
+
+.tech__about {
+  color: #fff;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.88px;
+  margin: 0;
+  padding: 100px 0 23px;
+  border-bottom: 1px solid #dadada;
+}
+
+@media screen and (max-width: 1279px) {
+  .tech__about {
+    padding: 90px 0 23px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tech__about {
+    font-size: 18px;
+    letter-spacing: -0.72px;
+    padding: 70px 0 28px;
+    border-bottom: 1px solid #000;
+  }
+}
+
+.tech__title {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+  margin: 0 auto;
+  padding: 90px 0 26px;
+}
+
+@media screen and (max-width: 1279px) {
+  .tech__title {
+    padding: 80px 0 22px;
+  }
+}
+
+/* @media screen and (max-width: 767px) {
+  .tech__title {
+    font-size: 18px;
+    letter-spacing: -0.72px;
+    padding: 70px 0 28px;
+    border-bottom: 1px solid #000;
+  }
+} */
+
+.tech__info {
+  max-width: 460px;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.56px;
+  margin: 0 auto;
+  padding: 0 0 100px;
+}
+
+.tech__used {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.tech__used-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 60px;
+  border-radius: 10px;
+  background: #303030;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+

@@ -1,0 +1,89 @@
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.aboutme__about {
+  color: #fff;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.88px;
+  margin: 0;
+  padding: 110px 0 23px;
+  border-bottom: 1px solid #dadada;
+}
+
+.aboutme__container {
+  display: flex;
+  gap: 270px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.aboutme__container-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0;
+  padding: 66px 0 0;
+}
+
+.aboutme__name {
+  color: #fff;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+  margin: 0;
+  padding: 0 0 18px;
+}
+
+.aboutme__prof {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+  padding: 0 0 26px;
+}
+
+.aboutme__info {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  padding: 0 0 99px;
+}
+
+.aboutme__link {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutme__photo {
+  width: 270px;
+  height: 327px;
+  margin: 0;
+  padding: 66px 0 0;
+}

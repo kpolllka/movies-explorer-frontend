@@ -1,0 +1,145 @@
+.login {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  max-width: 396px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 70px 0 0;
+}
+
+.login__logo {
+  align-self: flex-start;
+  padding: 0;
+}
+
+.login__title {
+  color: #fff;
+  align-self: flex-start;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  padding: 40px 0;
+}
+
+.login__form {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 0;
+  padding: 0;
+}
+
+.login__label {
+  align-self: flex-start;
+  color: #8b8b8b;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+.login__input {
+  width: 381px;
+  min-height: 46px;
+  border: 0;
+  border-radius: 8px;
+  background: #2f2f2f;
+  color: #fff;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.login__input[type="text"] {
+  padding-left: 15px;
+}
+
+.login__input[type="email"] {
+  padding-left: 15px;
+}
+
+.login__input[type="password"] {
+  padding-left: 15px;
+}
+
+.login__input:focus {
+  outline: none;
+  border-bottom: 1px solid #4285f4;
+}
+
+.login__error {
+  min-height: 10px;
+  margin: 0;
+  padding: 0;
+  color: #ee3465;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 396px;
+  height: 45px;
+  background: #4285f4;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0;
+  margin: 159px auto 16px;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+
+.login__button:hover {
+  opacity: 0.800000011920929;
+}
+
+.login__text {
+  color: #8b8b8b;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.login__text-link {
+  color: #4285f4;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login__text-link:hover {
+  opacity: 0.800000011920929;
+}
