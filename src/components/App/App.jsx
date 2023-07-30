@@ -13,7 +13,7 @@ import NotFound from '../NotFound/NotFound';
 
 function App() {
 const location = useLocation();
-const [LoggedIn, isLoggedIn ] = useState(false);
+const [LoggedIn, setLoggedIn] = useState(false);
   
   return (
     <>
@@ -29,7 +29,7 @@ const [LoggedIn, isLoggedIn ] = useState(false);
           <NotFound />
         <Footer /> */}
 
-        {/* {((location.pathname==='/')||(location.pathname==='/movies')||(location.pathname==='/saved-movies')||(location.pathname==='/profile')) && (<Header isLoggedIn = {true} />)} */}
+        {/* {((location.pathname==='/')||(location.pathname==='/movies')||(location.pathname==='/saved-movies')||(location.pathname==='/profile')) && (<Header LoggedIn = {true} />)} */}
         <Header />
         <Routes>
           <Route path='/' element={<Main />} />

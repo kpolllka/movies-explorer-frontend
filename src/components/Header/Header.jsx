@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function Header() {
-  const [LoggedIn, isLoggedIn] = useState(false);
+  const [LoggedIn, setLoggedIn] = useState(true);
 
   return (
     <header className="header">
-      {!isLoggedIn ? (
+      {!LoggedIn ? (
         <nav className="header__container">
           <Link to="/" className="header__logo">
             <img src={logo} alt="Логотип онлайн кинотеатра" />
