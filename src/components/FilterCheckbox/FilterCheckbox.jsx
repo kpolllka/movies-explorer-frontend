@@ -1,5 +1,4 @@
 import './FilterCheckbox.css';
-import { NavLink, Link, Routes, Route } from 'react-router-dom';
 
 function FilterCheckbox(props) {
   return (

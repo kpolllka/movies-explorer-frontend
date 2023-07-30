@@ -1,5 +1,5 @@
 import './NotFound.css';
-import { NavLink, Link, Routes, Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function NotFound (props) {
   let navigate = useNavigate();

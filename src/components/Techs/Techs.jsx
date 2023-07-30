@@ -1,5 +1,4 @@
 import './Techs.css';
-import { Link, Routes, Route } from 'react-router-dom';
 
 function Tech(props) {
   return (

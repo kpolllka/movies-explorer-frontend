@@ -6,13 +6,10 @@ import Main from '../Main/Main';
 import Footer from '../Footer/Footer';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
-// import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import Register from '../Register/Register';
 import Login from '../Login/Login';
 import Profile from '../Profile/Profile';
 import NotFound from '../NotFound/NotFound';
-
-
 
 function App() {
 const location = useLocation();
@@ -45,7 +42,6 @@ const [LoggedIn, isLoggedIn ] = useState(false);
         </Routes>
         {/* {((location.pathname==='/')||(location.pathname==='/movies')||(location.pathname==='/saved-movies')) && (<Footer />)} */}
         <Footer />        
-
 
       {/* </CurrentUserContext.Provider> */}
     </>

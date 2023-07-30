@@ -1,5 +1,4 @@
 import './NavTab.css';
-import { Link, Routes, Route } from 'react-router-dom';
 
 function NavTab(props) {
   return (      

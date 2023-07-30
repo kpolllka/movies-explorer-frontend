@@ -1,5 +1,4 @@
 import './AboutProject.css';
-import { Link, Routes, Route } from 'react-router-dom';
 
 function AboutProject(props) {
   return (

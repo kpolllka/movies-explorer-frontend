@@ -1,6 +1,6 @@
 import './Register.css';
 import logo from '../../images/logo.svg';
-import { NavLink, Link, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Register (props) {
   return (

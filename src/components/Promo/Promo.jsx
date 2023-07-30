@@ -1,6 +1,5 @@
 import './Promo.css';
 import NavTab from '../NavTab/NavTab';
-import { Link, Routes, Route } from 'react-router-dom';
 
 function Promo(props) {
   return (

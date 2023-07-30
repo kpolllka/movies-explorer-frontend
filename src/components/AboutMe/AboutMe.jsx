@@ -1,7 +1,6 @@
 import './AboutMe.css';
 import Portfolio from '../Portfolio/Portfolio';
 import photo from '../../images/about_me_photo.png';
-import { Link, Routes, Route } from 'react-router-dom';
 
 function AboutMe(props) {
   return (

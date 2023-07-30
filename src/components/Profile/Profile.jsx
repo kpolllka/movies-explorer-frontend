@@ -1,5 +1,5 @@
 import './Profile.css';
-import { NavLink, Link, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Profile (props) {
   return (
