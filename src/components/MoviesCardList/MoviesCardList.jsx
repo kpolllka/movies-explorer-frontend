@@ -1,4 +1,4 @@
-import './MoviesCardList.css'
+import "./MoviesCardList.css"
 import MoviesCard from "../MoviesCard/MoviesCard";
 
 function MoviesCardList(props) {

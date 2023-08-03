@@ -1,7 +1,7 @@
-import './MoviesCard.css';
-import movie from '../../images/moviecard.png'
-import { NavLink, Link, Routes, Route, useLocation } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import "./MoviesCard.css";
+import movie from "../../images/moviecard.png"
+import { useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function MoviesCard() {
   const location = useLocation();
@@ -9,11 +9,11 @@ function MoviesCard() {
 
   // React.useEffect(() => {
   //   // Google Analytics
-  //   ga('send', 'pageview');
+  //   ga("send", "pageview");
   // }, [location]);
 
-  const cardSaveButtonClassName = ( // Создаём переменную, которую зададим в `className` для кнопки сохранения фильма 
-    `movies-card__btn-save ${isActive && 'movies-card__btn-save_active'}` 
+  const cardSaveButtonClassName = ( // Создаём переменную, которую зададим в "className" для кнопки сохранения фильма 
+    `movies-card__btn-save ${isActive && "movies-card__btn-save_active"}` 
   );
   
   const handleClick = () => {
@@ -24,7 +24,8 @@ function MoviesCard() {
     <article className="movies-card">
       <div className="movies-card__img-container">
         <img className="movies-card__img" src={movie} alt="Кадр из фильма" />
-        <button className={cardSaveButtonClassName} type="button" onClick={handleClick}>{!isActive && "Сохранить"}</button>
+        {location.pathname === "/movies" && (<button className={cardSaveButtonClassName} type="button" onClick={handleClick}>{!isActive && "Сохранить"}</button>)}
+        {location.pathname === "/saved-movies" && (<button className = "movies-card__btn-save_delete"></button>)}
       </div>
       <div className="movies-card__about-container">
         <h2 className="movies-card__title">Баския: Взрыв реальности</h2>

@@ -10,16 +10,17 @@ import Register from '../Register/Register';
 import Login from '../Login/Login';
 import Profile from '../Profile/Profile';
 import NotFound from '../NotFound/NotFound';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 function App() {
 const location = useLocation();
-const [LoggedIn, setLoggedIn] = useState(false);
   
   return (
     <>
       {/* <CurrentUserContext.Provider value={currentUser}> */}
-
+      
         {/* <Header />
+          <BurgerMenu/>
           <Main />
           <Login />
           <Register />
@@ -29,8 +30,8 @@ const [LoggedIn, setLoggedIn] = useState(false);
           <NotFound />
         <Footer /> */}
 
-        {/* {((location.pathname==='/')||(location.pathname==='/movies')||(location.pathname==='/saved-movies')||(location.pathname==='/profile')) && (<Header LoggedIn = {true} />)} */}
-        <Header />
+        {((location.pathname==='/')||(location.pathname==='/movies')||(location.pathname==='/saved-movies')||(location.pathname==='/profile')) && (<Header />)}
+       
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/signin' element={<Login />} />
@@ -40,8 +41,8 @@ const [LoggedIn, setLoggedIn] = useState(false);
           <Route path='/saved-movies' element={<SavedMovies />} />          
           <Route path='/*' element={<NotFound />} />          
         </Routes>
-        {/* {((location.pathname==='/')||(location.pathname==='/movies')||(location.pathname==='/saved-movies')) && (<Footer />)} */}
-        <Footer />        
+        
+        {((location.pathname==='/')||(location.pathname==='/movies')||(location.pathname==='/saved-movies')) && (<Footer />)}
 
       {/* </CurrentUserContext.Provider> */}
     </>

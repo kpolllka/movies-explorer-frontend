@@ -1,16 +1,16 @@
-import SearchForm from '../SearchForm/SearchForm';
-import FilterCheckbox from '../FilterCheckbox/FilterCheckbox';
-import Preloader from '../Preloader/Preloader';
-import MoviesCardList from '../MoviesCardList/MoviesCardList';
+import SearchForm from "../SearchForm/SearchForm";
+import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
+import Preloader from "../Preloader/Preloader";
+import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 function Movies (props) {
     return (
-      <main className="content">
+      <section className="content">
         <SearchForm />
         <FilterCheckbox />
         {/* <Preloader /> */}
         <MoviesCardList />
-      </main>
+      </section>
     )
   }
   

@@ -7,6 +7,19 @@
     padding: 0 0 40px;
     border-bottom: 1px solid #424242;
   }
+
+  @media screen and (max-width: 1279px) {
+    .checkbox {
+      max-width: 708px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .checkbox {
+      max-width: 292px;
+      gap: 13px;
+    }
+  }
   
   .checkbox__title {
     color: #fff;
@@ -17,6 +30,12 @@
     line-height: 18px;
     margin: 0;
     padding: 0;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .checkbox__title {
+      font-size: 11px;
+    }
   }
 
   /* Реализация чекбокса */
@@ -30,7 +49,7 @@
   }
   
   .checkbox__container:hover {
-    opacity: 0.800000011920929;
+    opacity: 0.8;
   }
   
   .checkbox__input {

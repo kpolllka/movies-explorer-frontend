@@ -1,0 +1,215 @@
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .burger {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .burger__header {
+    display: flex;
+    justify-content: flex-end;
+    /* max-width: 700px; */
+    min-height: 74px;
+    background-color: gray;
+    /* position: fixed; */
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    background: transparent;
+    z-index: 100;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger___header {
+    /* max-width: 268px; */
+    /* margin-right: 10px; */
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .burger__btn {
+    /* display: block; */
+    display: flex;
+    width: 44px;
+    height: 44px;
+    right: 0;
+    position: relative;
+    cursor: pointer;
+    object-fit: contain;
+    padding: 0;
+    margin: 0 30px 0 0;
+    background-image: url(../../images/burger_icon_768.svg);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .burger__btn.active {
+    background-image: url(../../images/burger_icon_close_768.svg);
+    background-repeat: no-repeat;
+    margin: 10px 10px 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger__btn {
+    margin: 0 10px 0 0;
+    background-image: url(../../images/burger_icon_320.svg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger__btn.active {
+    background-image: url(../../images/burger_icon_close_320.svg);
+    background-repeat: no-repeat;
+    margin: 0px 1px 0 0;
+  }
+}
+
+/* затемнение фона при открытом бургера */
+@media screen and (max-width: 1279px) {
+  .burger__menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    z-index: 1;
+  }
+}
+
+/* стили для бургер меню */
+@media screen and (max-width: 1279px) {
+  .burger__menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    /* left: 0; */
+    transform: translateX(100%);
+    right: 0px;
+    transition: all 0.5s; /* скорость выползания бургера */
+    z-index: 50;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .burger__menu.active {
+    transform: translateX(32.29%);
+    /* right: 0; */
+    /* right: 520px; */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger__menu.active {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .burger__menu-content {
+    width: 67.71%; /* ширина бургера, для мобильной версии нужно будет задать 100% */
+    height: 100%;
+    height: 100vh;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s; /* скорость заползания бургера */
+    gap: 593px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger__menu-content {
+    width: 100%;
+    gap: 421px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .burger__links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 159px 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger__links-container {
+    padding: 144px 0 0;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .burger__links {
+    list-style-type: none;
+    padding: 0 0 30px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger__links {
+    padding: 0 0 24px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .burger__link {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .burger__link.active {
+    color: white;
+    border-bottom: 2px solid #fff;
+    padding: 0 0 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .burger__link.active {
+    padding: 0 0 7px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .burger__link-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    min-height: 32px;
+    background: #313131;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+}

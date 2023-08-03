@@ -1,3 +1,4 @@
+/* хедер для основной страницы */
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -103,15 +104,8 @@
   opacity: 0.8;
 }
 
-.header__container-movies {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1280px;
-  min-height: 74px;
-  margin: 0 auto;
-  padding: 0;
-}
 
+/* хедер для страницы с фильмами */
 .header__menu-islogin {
   display: flex;
   justify-content: space-between;
@@ -120,7 +114,14 @@
   padding: 0 70px 0 0;
 }
 
-.header__menu-movies {
+@media screen and (max-width: 1279px) {
+  .header__menu-islogin {
+    display: none;
+    padding: 0;
+  }
+}
+
+.header__menu-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,22 +162,13 @@
   font-family: Inter;
   font-size: 13px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 18px;
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
-.header__menu-save-movies {
-  color: #fff;
-  text-align: right;
-  font-family: Inter;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
+.header__menu-movies.active {
+  font-weight: 500;
 }
