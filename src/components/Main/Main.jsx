@@ -5,7 +5,7 @@ import AboutMe from "../AboutMe/AboutMe";
 
 function Main(props) {
     return (
-      <main className="content">
+      <main>
         <Promo />
         <AboutProject />
         <Tech />

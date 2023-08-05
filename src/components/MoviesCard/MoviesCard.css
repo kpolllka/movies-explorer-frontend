@@ -115,7 +115,7 @@
   }
 }
 
-.movies-card__btn-save_delete {
+.movies-card__btn-delete {
   background-image: url(../../images/btn_saved_delete.svg);
   position: absolute;
   border: 0;
@@ -129,8 +129,12 @@
   background-color: transparent;
 }
 
+.movies-card__btn-delete:hover {
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 767px) {
-  .movies-card__btn-save_delete {
+  .movies-card__btn-delete {
     top: 10px;
     right: 10px;
   }

@@ -5,12 +5,14 @@ import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 function Movies (props) {
     return (
-      <section className="content">
-        <SearchForm />
-        <FilterCheckbox />
-        {/* <Preloader /> */}
-        <MoviesCardList />
-      </section>
+      <main>
+        <section className="content">
+          <SearchForm />
+          <FilterCheckbox />
+          {/* <Preloader /> */}
+          <MoviesCardList />
+        </section>
+      </main>
     )
   }
   

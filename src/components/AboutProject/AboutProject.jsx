@@ -3,10 +3,10 @@ import './AboutProject.css';
 function AboutProject(props) {
   return (
     <section className="project" id="about-project">
-      <p className="project__about">О проекте</p>
+      <h2 className="project__about">О проекте</h2>
       <div className="project__container-about">
         <div className="project__all">
-          <h2 className="project__title">Дипломный проект включал 5 этапов</h2>
+          <h3 className="project__title">Дипломный проект включал 5 этапов</h3>
           <p className="project__info">Составление плана, работу над бэкендом, вёрстку, добавление функциональности и финальные доработки.</p>
         </div>
         <div className="project__all">

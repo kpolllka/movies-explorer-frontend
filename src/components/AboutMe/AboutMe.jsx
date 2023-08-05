@@ -8,8 +8,8 @@ function AboutMe(props) {
       <h2 className="aboutme__about">Студент</h2>
       <div className="aboutme__container">
         <div className="aboutme__container-info">
-          <h1 className="aboutme__name">Виталий</h1>
-          <h2 className="aboutme__prof">Фронтенд-разработчик, 30 лет</h2>
+          <h3 className="aboutme__name">Виталий</h3>
+          <p className="aboutme__prof">Фронтенд-разработчик, 30 лет</p>
           <p className="aboutme__info"> Я родился и живу в Саратове, закончил факультет экономики СГУ. У
             меня есть жена и&nbsp;дочь. Я люблю слушать музыку, а еще увлекаюсь
             бегом. Недавно начал кодить. С 2015 года работал в компании

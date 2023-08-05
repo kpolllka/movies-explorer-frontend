@@ -18,12 +18,12 @@ function BurgerMenu() {
   return (
     <div className="burger">
       <nav className="burger__header">
-        <div className={menuActive ? "burger__btn active" : "burger__btn"} onClick={burgerClick} />
+        <div className={menuActive ? "burger__btn click" : "burger__btn"} onClick={burgerClick} />
       </nav>
       
       {menuActive && <div className="burger__menu-overlay" onClick={() => setMenuActive(false)} />}
 
-      <div className={menuActive ? "burger__menu active" : "burger__menu"} onClick={() => setMenuActive(!menuActive)}>
+      <div className={menuActive ? "burger__menu open" : "burger__menu"} onClick={() => setMenuActive(!menuActive)}>
         <div className="burger__menu-content" onClick={(evt) => evt.stopPropagation()}>
           
           {/* <ul className="ul">
@@ -34,12 +34,13 @@ function BurgerMenu() {
             )}
           </ul > */}
 
-          <ul className="burger__links-container">
+          <nav className="burger__links-container">
             {links.map(item =>
             <li className="burger__links" key={item.id}>
-              <NavLink className="burger__link" to={item.to}>{item.value}</NavLink></li>
+              <NavLink className="burger__link" to={item.to}>{item.value}</NavLink>
+            </li>
             )}
-          </ul>
+          </nav>
           <Link className="burger__link-profile">Аккаунт</Link>
         </div>
       </div>

@@ -4,8 +4,8 @@ function Tech(props) {
   return (
     <section className="tech" id="about-technology">
       <div className="tech__container">
-        <p className="tech__about">Технологии</p>
-        <h2 className="tech__title">7 технологий</h2>
+        <h2 className="tech__about">Технологии</h2>
+        <h3 className="tech__title">7 технологий</h3>
         <p className="tech__info">На курсе веб-разработки мы освоили технологии, которые применили в дипломном проекте.</p>
         <ul className="tech__used">
           <li className="tech__used-list">HTML</li>

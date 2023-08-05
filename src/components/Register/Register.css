@@ -31,6 +31,10 @@
   padding: 0;
 }
 
+.register__logo:hover {
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 767px) {
   .register__logo {
     align-self: center;
@@ -195,5 +199,5 @@
 }
 
 .register__text-link:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }

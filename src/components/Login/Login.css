@@ -31,6 +31,10 @@
   padding: 0;
 }
 
+.login__logo:hover {
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 767px) {
   .login__logo {
     align-self: center;
@@ -195,5 +199,5 @@
 }
 
 .login__text-link:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
