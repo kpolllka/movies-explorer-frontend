@@ -36,9 +36,7 @@ function BurgerMenu() {
 
           <nav className="burger__links-container">
             {links.map(item =>
-            <li className="burger__links" key={item.id}>
-              <NavLink className="burger__link" to={item.to}>{item.value}</NavLink>
-            </li>
+              <NavLink className="burger__links" to={item.to} key={item.id}>{item.value}</NavLink>
             )}
           </nav>
           <Link className="burger__link-profile">Аккаунт</Link>

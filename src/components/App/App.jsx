@@ -19,7 +19,7 @@ const location = useLocation();
     <>
       {/* <CurrentUserContext.Provider value={currentUser}> */}
       
-        {/* <Header />
+        <Header />
           <BurgerMenu/>
           <Main />
           <Login />
@@ -28,9 +28,9 @@ const location = useLocation();
           <Movies />
           <SavedMovies />
           <NotFound />
-        <Footer /> */}
+        <Footer />
 
-        {((location.pathname==='/')||(location.pathname==='/movies')||(location.pathname==='/saved-movies')||(location.pathname==='/profile')) && (<Header />)}
+        {/* {((location.pathname==='/')||(location.pathname==='/movies')||(location.pathname==='/saved-movies')||(location.pathname==='/profile')) && (<Header />)}
        
         <Routes>
           <Route path='/' element={<Main />} />
@@ -42,7 +42,7 @@ const location = useLocation();
           <Route path='/*' element={<NotFound />} />          
         </Routes>
         
-        {((location.pathname==='/')||(location.pathname==='/movies')||(location.pathname==='/saved-movies')) && (<Footer />)}
+        {((location.pathname==='/')||(location.pathname==='/movies')||(location.pathname==='/saved-movies')) && (<Footer />)} */}
 
       {/* </CurrentUserContext.Provider> */}
     </>

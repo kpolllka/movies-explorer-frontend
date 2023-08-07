@@ -4,16 +4,14 @@ import Preloader from "../Preloader/Preloader";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 function Movies (props) {
-    return (
-      <main>
-        <section className="content">
-          <SearchForm />
-          <FilterCheckbox />
-          {/* <Preloader /> */}
-          <MoviesCardList />
-        </section>
-      </main>
-    )
-  }
+  return (
+    <section className="content">
+      <SearchForm />
+      <FilterCheckbox />
+      {/* <Preloader /> */}
+      <MoviesCardList />
+    </section>
+  )
+}
   
   export default Movies;

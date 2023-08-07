@@ -5,14 +5,12 @@ import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
 
 function SavedMovies(props) {
   return (
-    <main>
-      <section className="content">
-        <SearchForm />
-        <FilterCheckbox />
-        {/* <Preloader /> */}
-        <MoviesCardList />
-      </section>
-    </main>
+    <section className="content">
+      <SearchForm />
+      <FilterCheckbox />
+      {/* <Preloader /> */}
+      <MoviesCardList />
+    </section>
   )
 }
   
