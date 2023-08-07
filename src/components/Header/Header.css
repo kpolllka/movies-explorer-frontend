@@ -1,0 +1,177 @@
+/* хедер для основной страницы */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  min-height: 74px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    max-width: 320px;
+  }
+}
+
+.header__logo {
+  width: 38px;
+  height: 38px;
+  align-self: center;
+  margin: 0;
+  padding: 0 0 0 70px;
+}
+
+.header__logo:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__logo {
+    padding: 0 0 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__logo {
+    padding: 0 0 0 14px;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0;
+  padding: 0 70px 0 0;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__menu {
+    padding: 0 30px 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__menu {
+    gap: 14px;
+    padding: 0 14px 0 0;
+    font-size: 10px;
+  }
+}
+
+.header__menu-signup {
+  align-self: center;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header__menu-signup:hover {
+  opacity: 0.8;
+}
+
+.header__menu-signin {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 76px;
+  height: 32px;
+  border-radius: 3px;
+  background: #3ddc84;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header__menu-signin {
+    width: 54px;
+    height: 26px;
+  }
+}
+
+.header__menu-signin:hover {
+  opacity: 0.8;
+}
+
+/* хедер для страницы с фильмами */
+.header__menu-islogin {
+  display: flex;
+  justify-content: space-between;
+  gap: 364px;
+  margin: 0;
+  padding: 0 70px 0 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .header__menu-islogin {
+    display: none;
+    padding: 0;
+  }
+}
+
+.header__menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-profile {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 32px;
+  border-radius: 20px;
+  background: #313131;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-profile:hover {
+  opacity: 0.8;
+}
+
+.header__menu-movies {
+  color: #fff;
+  text-align: right;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-movies.active {
+  font-weight: 500;
+}

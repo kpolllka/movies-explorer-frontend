@@ -1,0 +1,120 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1140px;
+  min-height: 172px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .footer {
+    max-width: 708px;
+    min-height: 172px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    max-width: 300px;
+    min-height: 253px;
+  }
+}
+
+.footer__title {
+  color: #8b8b8b;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 79px 0 20px;
+  border-bottom: 1px solid #424242;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__title {
+    font-size: 12px;
+    padding: 79px 0 21px;
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 20px 0 0;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__container {
+    flex-direction: column-reverse;
+    padding: 30px 0 0;
+    align-items: center;
+  }
+}
+
+.footer__date {
+  color: #fff;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__date {
+    color: #8b8b8b;
+    font-size: 12px;
+    padding-top: 30px;
+  }
+}
+
+.footer__navigate {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__navigate {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+.footer__navigate-link {
+  color: #fff;
+  text-align: right;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .footer__navigate-link {
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__navigate-link {
+    font-size: 12px;
+  }
+}
+
+.footer__navigate-link:hover {
+  opacity: 0.7;
+}
