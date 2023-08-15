@@ -1,6 +1,6 @@
 import "./Techs.css";
 
-function Tech(props) {
+const Tech = () => {
   return (
     <section className="tech" id="about-technology">
       <div className="tech__container">

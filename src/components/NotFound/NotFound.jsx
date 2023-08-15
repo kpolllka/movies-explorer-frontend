@@ -1,7 +1,7 @@
 import "./NotFound.css";
 import { useNavigate } from "react-router-dom";
 
-function NotFound (props) {
+const NotFound = () => {
   let navigate = useNavigate();
 
   return (

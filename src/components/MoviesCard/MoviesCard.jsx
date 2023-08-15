@@ -1,38 +1,126 @@
 import "./MoviesCard.css";
-import movie from "../../images/moviecard.png"
 import { useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-function MoviesCard({name}) {
+const MoviesCard = ({ card, handleAddMovie, handleDeleteMovies, sevMovies, handleMovieDel }) => {
   const location = useLocation();
-  const [isActive, setIsActive] = useState(false);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const savedMovieIds = sevMovies.map(movie => movie.movieId);
 
-  // React.useEffect(() => {
-  //   // Google Analytics
-  //   ga("send", "pageview");
-  // }, [location]);
+  const isMovieSaved = () => savedMovieIds.includes(card.id);
+  const cardSaveButtonClassName = `movies-card__btn-save ${isMovieSaved() ? "movies-card__btn-save_active" : ""}`;
 
-  const cardSaveButtonClassName = ( // Создаём переменную, которую зададим в "className" для кнопки сохранения фильма 
-    `movies-card__btn-save ${isActive && "movies-card__btn-save_active"}` 
-  );
+  const del = () => {
+    const savedMovie = sevMovies.find((movie) => card.id === movie.movieId);
+    handleMovieDel(savedMovie._id);
+  };
+
+  const handleSaveMovie = async () => {
+    if (isButtonDisabled) return;
+
+    setIsButtonDisabled(true);
+
+    try {
+      if (isMovieSaved()) {
+        await del();
+      } else {
+        await handleAddMovie(card);
+      }
+    } catch (error) {
+      console.error("Ошибка при обновлении фильма:", error);
+    } finally {
+      setIsButtonDisabled(false);
+    }
+  };
+
+  const handleDeleteMovie = () => {
+    handleDeleteMovies(card);
+  };
+
+  const padTo2Digits = (num) => {
+    return num.toString().padStart(1, '0');
+  };
+
+  const changeduration = (totalMinutes) => {
+    const minutes = totalMinutes % 60;
+    const hours = Math.floor(totalMinutes / 60);
+
+    return `${padTo2Digits(hours)}ч ${padTo2Digits(minutes)}м`;
+  };
   
-  const handleClick = () => {
-    setIsActive(current => !current); // toggle кнопки сохранения фильма
-  }
- 
   return (
     <article className="movies-card">
       <div className="movies-card__img-container">
-        <img className="movies-card__img" src={movie} alt={name} />
-        {location.pathname === "/movies" && (<button className={cardSaveButtonClassName} type="button" onClick={handleClick}>{!isActive && "Сохранить"}</button>)}
-        {location.pathname === "/saved-movies" && (<button className = "movies-card__btn-delete"></button>)}
+        <a href={card.trailerLink} target="_blank" rel="noreferrer">
+          <img className="movies-card__img" src={location.pathname === '/movies' ? `https://api.nomoreparties.co${card.image.url}` : card.image} alt={card.nameRU} />
+        </a>
+        {location.pathname === "/movies" && (
+          <button className={cardSaveButtonClassName} type="button" onClick={handleSaveMovie} disabled={isButtonDisabled}>
+            {isMovieSaved() ? "" : "Сохранить"}
+          </button>
+        )}
+        {location.pathname === "/saved-movies" && (
+          <button className="movies-card__btn-delete" onClick={handleDeleteMovie}></button>
+        )}
       </div>
       <div className="movies-card__about-container">
-        <h2 className="movies-card__title">Баския: Взрыв реальности</h2>
-        <p className="movies-card__time">1ч 17м</p>
-      </div>      
+        <h2 className="movies-card__title">{card.nameRU}</h2>
+        <p className="movies-card__time">{changeduration(card.duration)}</p>
+      </div>
     </article>
   );
 }
 
 export default MoviesCard;
+
+
+
+// import "./MoviesCard.css";
+// import { useLocation } from "react-router-dom";
+// import { useState } from "react";
+
+// function MoviesCard({ card, handleAddMovie, handleMovieDel, handleDeleteMovies }) {
+//   const location = useLocation();
+//   const [isActive, setIsActive] = useState(false);
+
+//   const cardSaveButtonClassName = (
+//     `movies-card__btn-save ${isActive && "movies-card__btn-save_active"}` 
+//   );
+  
+//   const handleClick = () => {
+//     handleAddMovie(card);
+//     setIsActive(current => !current);
+//   }
+
+//   const handleDel = () => {
+//     // handleMovieDel(card.id);
+//     handleDeleteMovies(card._id)
+//   }
+
+//     const padTo2Digits = (num) => {
+//     return num.toString().padStart(2, '0');
+//   }
+
+//   const changeduration = (totalMinutes) => {
+//     const minutes = totalMinutes % 60;
+//     const hours = Math.floor(totalMinutes / 60);
+
+//     return `${padTo2Digits(hours + "ч")} ${padTo2Digits(minutes + "м")}`;
+//   }
+ 
+//   return (
+//     <article className="movies-card">
+//       <div className="movies-card__img-container">
+//         <a href={card.trailerLink} target="_blank" rel="noreferrer"><img className="movies-card__img" src={location.pathname==='/movies' ? `https://api.nomoreparties.co${card.image.url}` : card.image} alt={card.nameRU} /></a>
+//         {location.pathname === "/movies" && (<button className={cardSaveButtonClassName} type="button" onClick={!isActive ? handleClick : handleDel}>{!isActive && "Сохранить"}</button>)}
+//         {location.pathname === "/saved-movies" && (<button className = "movies-card__btn-delete" onClick={handleDel}></button>)}
+//       </div>
+//       <div className="movies-card__about-container">
+//         <h2 className="movies-card__title">{card.nameRU}</h2>
+//         <p className="movies-card__time">{changeduration(card.duration)}</p>
+//       </div>      
+//     </article>
+//   );
+// }
+
+// export default MoviesCard;

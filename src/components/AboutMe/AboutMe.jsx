@@ -2,7 +2,7 @@ import './AboutMe.css';
 import Portfolio from '../Portfolio/Portfolio';
 import photo from '../../images/about_me_photo.png';
 
-function AboutMe(props) {
+const AboutMe = () => {
   return (
     <section className="aboutme" id="about-student">
       <h2 className="aboutme__about">Студент</h2>

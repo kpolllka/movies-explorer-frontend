@@ -2,7 +2,7 @@ import "./Portfolio.css";
 import arrow from "../../images/link_to_portfolio.svg";
 import { Link } from "react-router-dom";
 
-function Portfolio(props) {
+const Portfolio = () => {
     return (
       <section className="portfolio">
         <h3 className="portfolio__title">Портфолио</h3>

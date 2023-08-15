@@ -93,7 +93,7 @@
   font-weight: 400;
   line-height: normal;
   padding: 0;
-  margin: 0 0 10px;
+  margin: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -120,16 +120,38 @@
 }
 
 .login__error {
-  min-height: 10px;
+  min-height: 20px;
   margin: 0;
   padding: 0;
   color: #ee3465;
   font-family: Inter;
-  font-size: 10px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+
+.login__error-server {
+  min-width: 396px;
+  min-height: 14px;
+  color: #ff004c;
+  text-align: center;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 125px auto 20px;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .login__error-server {
+    min-width: 260px;
+    margin: 219px auto 14px;
+  }
+}
+
 
 .login__button {
   display: flex;
@@ -146,22 +168,28 @@
   font-weight: 500;
   line-height: normal;
   padding: 0;
-  margin: 159px auto 16px;
+  margin: 0 auto 16px;
   border-radius: 3px;
   border: 0;
   cursor: pointer;
+}
+
+.login__button:hover {
+  opacity: 0.8;
+}
+
+.login__button:disabled {
+  background: #f8f8f8;
+  opacity: 1;
+  color: #c2c2c2;
 }
 
 @media screen and (max-width: 767px) {
   .login__button {
     width: 260px;
     font-size: 12px;
-    margin: 247px auto 14px;
+    margin: 0 auto 14px;
   }
-}
-
-.login__button:hover {
-  opacity: 0.8;
 }
 
 .login__text {

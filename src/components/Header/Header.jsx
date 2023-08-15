@@ -1,15 +1,12 @@
 import "./Header.css";
 import logo from "../../images/logo.svg";
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
-function Header() {
-  const [LoggedIn, setLoggedIn] = useState(true);
-
+const Header = ({ loggedIn }) => {
   return (
     <header className="header">
-      {!LoggedIn ? (
+      {!loggedIn ? (
         <nav className="header__container">
           <Link to="/" className="header__logo"><img src={logo} alt="Логотип онлайн кинотеатра" /></Link>
           <div className="header__menu">

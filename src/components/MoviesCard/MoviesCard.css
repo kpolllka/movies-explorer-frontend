@@ -49,7 +49,7 @@
 .movies-card__img {
   width: 360px;
   height: 201px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1279px) {

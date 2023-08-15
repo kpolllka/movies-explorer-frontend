@@ -1,11 +1,32 @@
 import "./SearchForm.css";
+import {useEffect } from "react";
+import useFormAndValidation from "../../hooks/UseFormAndValidation";
 
-function SearchForm(props) {
+const SearchForm = ({ handleMovies, searchText }) => {
+  const { values, handleChange, isValid, resetForm } = useFormAndValidation();
+
+  useEffect(() => {
+    resetForm({ inputValue: searchText });
+  }, [resetForm, searchText]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    handleMovies(values.inputValue);
+  };
+
   return (
     <section className="search">
-      <form className="search__form" name="search-form">
-        <input className="search__form-input" name="search-form-input"type="text" placeholder="Фильм" required />
-        <button className="search__form-button" type="submit"></button>
+      <form className="search__form" onSubmit={handleSubmit}>
+        <input
+          className="search__form-input"
+          value={values.inputValue || ""}
+          onChange={handleChange}
+          type="text"
+          placeholder="Фильм"
+          name="inputValue" 
+          required
+        />
+        <button className="search__form-button" type="submit" disabled={!isValid}></button>
       </form>
     </section>
   );
