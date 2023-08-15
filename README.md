@@ -14,6 +14,9 @@ dark-2
 # Адрес репозитория
 https://github.com/kpolllka/movies-explorer-frontend
 
+# Ссылка на PullRequest
+https://github.com/kpolllka/movies-explorer-frontend/pull/2
+
 ## Ссылки на проект
 IP 158.160.106.69
 Frontend https://kino.nomoredomains.xyz
