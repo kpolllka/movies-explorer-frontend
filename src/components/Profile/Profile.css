@@ -80,6 +80,19 @@
 
 .profile__label:last-of-type {
   border-bottom: none;
+  margin-bottom: 159px;
+}
+
+@media screen and (max-width: 1279px) {
+  .profile__label:last-of-type {
+    margin-bottom: 149px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile__label:last-of-type {
+    margin-bottom: 318px;
+  }
 }
 
 .profile__input {
@@ -107,7 +120,6 @@
   border-bottom: none;
 }
 
-
 .profile__input:focus {
   outline: none;
   border-bottom: 1px solid #3ddc84;
@@ -125,6 +137,43 @@
   line-height: normal;
 }
 
+.profile__saved {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 410px;
+  height: 45px;
+  background: #4285f4;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0;
+  margin: 20px auto 16px;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .profile__saved {
+    width: 260px;
+  }
+}
+
+.profile__saved:hover {
+  opacity: 0.8;
+}
+
+.profile__saved:disabled {
+  background: #f8f8f8;
+  opacity: 1;
+  color: #c2c2c2;
+}
+
 .profile__btn-edit {
   display: flex;
   justify-content: center;
@@ -138,21 +187,21 @@
   font-weight: 400;
   line-height: normal;
   padding: 0;
-  margin: 193px auto 16px;
+  margin: 0 auto 16px;
   border: 0;
   cursor: pointer;
 }
 
 @media screen and (max-width: 1279px) {
   .profile__btn-edit {
-    margin: 183px auto 16px;
+    margin: 0px auto 16px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .profile__btn-edit {
     font-size: 12px;
-    margin: 352px auto 16px;
+    margin: 0 auto 16px;
   }
 }
 
@@ -163,6 +212,8 @@
 .profile__text-link {
   display: flex;
   justify-content: center;
+  align-items: center;
+  background: #202020;
   color: #ee3465;
   text-align: center;
   font-family: Inter;
@@ -174,6 +225,7 @@
   margin: 0 auto;
   text-decoration: none;
   cursor: pointer;
+  border: 0;
 }
 
 .profile__text-link:hover {
@@ -184,4 +236,48 @@
   .profile__text-link {
     font-size: 12px;
   }
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.profile__error-server {
+  max-width: 410px;
+  min-height: 14px;
+  color: #ff004c;
+  text-align: center;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1279px) {
+  .profile__error-server {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile__error-server {
+    margin: 0;
+    max-width: 260px;
+    font-size: 9px;
+  }
+}
+
+.profile__error-server_successful {
+  color: #3ddc84;
+}
+
+
+.profile__button-container {
+  margin: 20px 0 0;
 }

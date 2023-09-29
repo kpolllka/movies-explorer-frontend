@@ -1,6 +1,6 @@
 import "./NavTab.css";
 
-function NavTab(props) {
+const NavTab = () => {
   return (      
     <nav className="navlink">
       <a href="#about-project" className="navlink__menu">О проекте</a>

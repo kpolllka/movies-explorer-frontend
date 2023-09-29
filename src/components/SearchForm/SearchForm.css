@@ -24,6 +24,7 @@
   margin: 0;
   padding: 80px 0 29px;
   align-items: center;
+  gap: 10px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -90,4 +91,8 @@
 
 .search__form-button:hover {
   opacity: 0.8;
+}
+
+.search__form-button:disabled {
+  opacity: 0.4;
 }

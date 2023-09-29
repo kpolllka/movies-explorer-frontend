@@ -1,14 +1,23 @@
 import "./FilterCheckbox.css";
 
-function FilterCheckbox(props) {
+const FilterCheckbox = ({ handleShortFilmsOnly, shortFilmsOnly }) => {
+  const handleCheckboxChange = (event) => {
+    handleShortFilmsOnly(event.target.checked);
+  };
+
   return (
-      <form className="checkbox">
-        <label className="checkbox__container">
-          <input className="checkbox__input" type="checkbox" />
-          <span className="checkbox__style"></span>
-        </label>
-        <p className="checkbox__title">Короткометражки</p>
-      </form>
+    <form className="checkbox">
+      <label className="checkbox__container">
+        <input
+          className="checkbox__input"
+          type="checkbox"
+          checked={shortFilmsOnly}
+          onChange={handleCheckboxChange}
+        />
+        <span className="checkbox__style"></span>
+      </label>
+      <p className="checkbox__title">Короткометражки</p>
+    </form>
   );
 }
 
