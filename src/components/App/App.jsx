@@ -132,18 +132,6 @@ const locationFooter = ((location.pathname==='/')||(location.pathname==='/movies
   return (
     <>
       <CurrentUserContext.Provider value={currentUser}>
-      
-        {/* <Header />
-          <BurgerMenu/>
-          <Main />
-          <Login />
-          <Register />
-          <Profile />
-          <Movies />
-          <SavedMovies />
-          <NotFound />
-        <Footer /> */}
-
         {locationHeader && (<Header loggedIn = {loggedIn} />)}
        
         <Routes>
