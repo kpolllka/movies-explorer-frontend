@@ -31,5 +31,5 @@
 `npm run start` — запускает сервер
 
 ## Адрес репозитория:
-https://github.com/kpolllka/movies-explorer-frontend
+https://github.com/kpolllka/movies-explorer-frontend   
 https://github.com/kpolllka/movies-explorer-api - backend часть приложения
